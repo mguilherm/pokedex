@@ -1,0 +1,302 @@
+body{
+  background-color: #dddddd;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+
+}
+
+h3{
+  text-transform: uppercase;
+  margin-bottom: 0;
+  
+}
+
+h4 {
+  margin-top: 0;
+  padding: .3rem;
+  margin: 0 0 1rem;
+  max-width: 4rem;
+  border-radius: 1rem;
+}
+
+input{
+
+  border: none;
+  width: 25rem;
+  height: 3rem;
+  border-radius: 3rem;
+  outline-style:none;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-align: center;
+  
+  
+}
+button {
+  background-color: yellow;
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 3rem;
+  margin-top: 1rem;
+  outline-style:none;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  font-weight: bolder;
+  cursor: pointer;
+
+  
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.thumb{
+  display: flex;
+  align-items: center;
+}
+
+.thumb p{
+  
+  text-align: center;
+}
+
+.thumb img {
+  max-width: 150px;
+  align-items: center;
+ 
+   
+}
+
+
+#profilePokemon {
+  transition: ease-in-out 0.2s;
+}
+#profilePokemon:hover{
+  transform: scale(1.5);
+}
+
+
+#header {
+  background-image: url(./img/header.jpg);
+  width: cover;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.2);
+}
+
+#header img {
+  height: 9rem;
+}
+
+.types {
+  padding: .5rem; 
+  border-radius: 2rem;
+ width: 5rem;
+ text-align: center;
+}
+
+.types-container{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  text-transform: uppercase;
+
+  font-weight: bolder;
+}
+
+.cards-container{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  margin:1rem ;
+  justify-content: center;
+
+
+}
+
+.cards-container img{
+  width: 150px;
+  height: 150px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  border-radius: 3rem;
+  width: 15rem;
+  background-color: #282c34;
+  color: #dddddd;
+}
+
+.btn{
+  display: flex;
+  gap: 3rem;
+  justify-content: flex-end;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.container {
+  background-color: #282c34;
+  display: fixed;
+  width: fit-content;
+  height: 15rem;
+  color: aliceblue;
+  border-radius: 2rem;
+  padding: 5rem;
+  margin: 3rem 1rem 1rem;
+  box-shadow: 1px 1px 15px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.list-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 15rem;
+    
+}
+
+.list-container img {
+  max-width: 150px;
+}
+
+.detailsPokemon{
+  margin-left: 3rem;
+}
+
+.cardImage{
+  transition: ease-in-out 0.2s;
+}
+.cardImage:hover{
+  transform: scale(1.5)
+}
+
+.general-container{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+#filter-bar{
+  background-color: #282c34;
+  width: 100%;
+}
+
+#loadingImage{
+width: 300px;
+height: 300px;
+background: url(./img/pokebola.png) no-repeat;
+background-size: contain;
+position: absolute;
+top:50%;
+left:40%;
+}
+
+@keyframes gira {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.horario{
+  animation: gira 0.5s linear infinite;   
+}
+
+.overlay {
+  background: rgba(14, 14, 14, .9);
+  position: fixed;
+  top: 25%;
+  bottom:25%;
+  left:25%;
+  right: 25%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#footer {
+  display: flex;
+  align-items: center;  
+  justify-content: flex-end;
+  height: 100px;
+  width: cover;
+  background-color: #282c34;
+  color: #dddddd;
+}
+
+.footer-whrapper{
+  margin-right: 3rem;
+}
+a{
+  text-decoration: none;
+  
+}
+
+.icons-wrapper{
+  display: flex;
+  justify-content: flex-end;
+  color: #dddddd;
+  gap: 1rem;
+  
+}
+
+.icons-wrapper a {
+  color: #dddddd;
+  font-size: 1.1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+
+  
+  .cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+   
+  }
+ 
+}
+
+@media only screen and (min-width: 600px) {
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  
+ .overlay{
+   display: flex;
+   justify-content: center; 
+
+  
+  }
+
+
+}
