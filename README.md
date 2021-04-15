@@ -1,6 +1,6 @@
-#Pokedex
+# Pokedex
 
-Este projeto foi desenvolvido em React, para apresentar uma listagem de 20 em 20 Pokémon, além de uma barra de pesquisa por nome ou número do Pokemon, recebidos pela API https://pokeapi.co/docs/v2#berries-section .
+Este projeto foi desenvolvido em React, para apresentar uma listagem de 20 em 20 Pokémon, além de uma barra de pesquisa por nome ou número do Pokemon, recebidos pela API https://pokeapi.co/docs/v2#berries-section, usando Axios para a requisição dos dados.
 
 ## Getting Started with Create React App
 
