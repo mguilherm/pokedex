@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+#Pokedex
+
+Este projeto foi desenvolvido em React, para apresentar uma listagem de 20 em 20 Pokémon, além de uma barra de pesquisa por nome ou número do Pokemon, recebidos pela API https://pokeapi.co/docs/v2#berries-section .
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
